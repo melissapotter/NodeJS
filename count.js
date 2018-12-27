@@ -3,3 +3,5 @@ var counter = function(arr){
 };
 
 module.exports = counter; 
+
+// hi
