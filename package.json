@@ -8,9 +8,25 @@
   "dependencies": {
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.9",
-    "express": "~4.16.0",
+    "express": "^4.16.4",
     "http-errors": "~1.6.2",
     "jade": "~1.11.0",
     "morgan": "~1.9.0"
-  }
+  },
+  "description": "Hello There!!",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melissapotter/NodeJS.git"
+  },
+  "keywords": [
+    "nodeJS"
+  ],
+  "author": "Melissa Potter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melissapotter/NodeJS/issues"
+  },
+  "homepage": "https://github.com/melissapotter/NodeJS#readme"
 }
