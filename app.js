@@ -1,23 +1,24 @@
-var http = require ('http');
-var fs = require('fs');
 var express = require('express');
 
 var app = express();
 
+app.set('view engine', 'ejs');
+
 
 app.get('/', function(req, res){
-  res.send('this is the homepage');
+  res.sendfile(__dirname + '/index.html');
 });
 
 app.get('/contact', function(req, res){
-  res.send('this is the contact page');
+  res.sendfile(__dirname + '/contact.html');
 });
 
-app.get('/profile/:id', function(req, res){
-  res.send('You requested to see the ID of ' + req.params.id);
+app.get('/profile/:name', function(req, res){
+  var data = {age: 25, job: 'developer'};
+  res.render('profile', {person: req.params.name, data: data});
 });
 
-app.listen(3000);
+app.listen(8080);
 
 
 
